@@ -1,0 +1,32 @@
+<html>
+	<head>
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <title>My webpage</title>
+     <style>
+			ul {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			}
+			
+			li {
+			  display: inline;
+			}
+			</style>
+  </head>
+	<body>
+    <!-- navbar that should appear on every page -->
+		<ul>
+		  <li><a href="/">Home</a></li>
+		  <li><a href="/all_books">All books</a></li>
+		</ul>
+
+    <!-- placeholder for content to be filled in by subsequent views -->
+		{% block content %}
+
+       <!-- Content provided by other templates will be filled in here -->
+    {% endblock %}
+	</body>
+</html>
